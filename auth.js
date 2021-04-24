@@ -32,7 +32,7 @@ module.exports = function (app, myDataBase) {
           });
         }
       ));
-
+      // only this url needs to be changed
       passport.use(new GitHubStrategy({
         clientID: process.env.GITHUB_CLIENT_ID,
         clientSecret: process.env.GITHUB_CLIENT_SECRET,
